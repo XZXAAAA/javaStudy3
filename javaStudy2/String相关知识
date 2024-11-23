@@ -1,0 +1,5 @@
+直接赋值类型的会服用字符常量池中的
+new 出来的会在堆空间开辟一个新的空间
+如果很多字符串变量拼接，不要直接+,在底层会创建多个对象，浪费时间和性能
+因为拼接会使用stringbuffer，同时stringbuffer 的 toString
+的源码是return 一个 new String
